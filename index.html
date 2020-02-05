@@ -5,8 +5,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Join VSO Student Leader Community on Slack!</title>
     <link href="./source/style.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="./source/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <link href="./source/css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+    <link href="./source/fonts.css" rel="stylesheet" type="text/css">
+    <script src="http://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
+    <script src="./js/jquery-csv.js"></script>
   </head>
 
   <body>
@@ -15,7 +17,7 @@
       <div class="main">
         <div class="header">
           <div class="img-header">
-            <img src="./source/assu.png" alt="R-Ladies logo" class="logo-img">
+            <img src="./source/assu.png" alt="ASSU logo" class="logo-img">
           </div>
             <h1><strong>VSO Student Leaders</strong></h1>
         </div>
@@ -26,6 +28,10 @@
               <div id="div-1" class="intro">
                 <h2> <strong>Welcome VSO Student Leaders!</strong></h2>
                 <p>Before joining our slack, we would like to guide you through a few essential pieces of information regarding the access and use of this Slack.</p>
+                <select id="selectNumber">
+                  <option>Choose a number</option>
+                </select>
+                <p id="demo"></p>
                 <div class="pages">
                   <button onclick="toggle_visibility('div-1', 'div-2')" class="button">Next</button>
                 </div>
@@ -146,11 +152,7 @@
               </div>
 
               <div id="div-11" class="intro">
-                <h2><strong>Contact</strong></h2>
-                <p>If you have a question regarding R-Ladies community slack please contact <a href="mailto:slack@rladies.org">slack@rladies.org</a>.</p>
-                <p>If you are interested in starting an R-Ladies chapter in your city (awesome!), please contact <a href="mailto:info@rladies.org">info@rladies.org</a>.</p>
-                <p>If you would like to report harassment or violation of parts of the Code of Conduct, please contact <a href="mailto:reporting@rladies.org">reporting@rladies.org</a>.</p>
-                <p>Within Slack you can contact us via "@Community Management Team".</p>
+                <h2><strong>Leader Information</strong></h2>
                 <div class="pages">
                   <button onclick="toggle_visibility('div-11', 'div-10')" class="button">Previous</button>
                   <button onclick="toggle_visibility('div-11', 'div-12')" class="button">Next</button>
@@ -201,6 +203,35 @@
       next.style.display = 'block'
       }
   </script>
+  <script>
+    var select = document.getElementById("selectNumber"); 
+    var options = ["1", "2", "3", "4", "5"];
+    for(var i = 0; i < options.length; i++){
+        var opt = option[i];
+        var el = document.createElement("option");
+        el.textContent = opt;
+        el.value = opt;
+        select.appendChild(el);
+    }
+  </script>
+  <script>
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            myFunction(this);
+        }
+    };
+    xhttp.open("GET", "orgs.xml", true);
+    xhttp.send();
+    
+    function myFunction(xml) {
+        var xmlDoc = xml.responseXML;
+        var x = xmlDoc.getElementsByTagName('name')[0];
+        var y = x.childNodes[0];
+        document.getElementById("demo").innerHTML = y.nodeValue;
+    }
+    </script>
+  
 
 </body>
 </html>
