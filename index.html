@@ -7,8 +7,6 @@
     <link href="./source/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
     <link href="./source/fonts.css" rel="stylesheet" type="text/css">
-    <script src="http://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
-    <script src="./js/jquery-csv.js"></script>
   </head>
 
   <body>
@@ -28,19 +26,686 @@
               <div id="div-1" class="intro">
                 <h2> <strong>Welcome VSO Student Leaders!</strong></h2>
                 <p>Before joining our slack, we would like to guide you through a few essential pieces of information regarding the access and use of this Slack.</p>
-                <select id="selectNumber">
-                  <option>Choose a number</option>
-                </select>
-                <p id="demo"></p>
+                <label for="default">What is your role?</label>
+                <input type="text" id="default" list="Roles">
+                <datalist id="Roles">
+                  <option value="President/Co-President">
+                  <option value="Vice President">
+                  <option value="Financial Officer">
+                  <option value="Other">
+                </datalist>
+
+                <label for="default">Which VSO are you in?</label>
+                <input type="text" id="default" list="VSO">
+                <datalist id="VSO">
+                  <option value = "A2 Fellowship"></option>
+                    <option value = "Adopt a Science Olympiad Team"></option>
+                    <option value = "Adventist Christian Fellowship"></option>
+                    <option value = "Afrobeats"></option>
+                    <option value = "Aikido Association of Stanford"></option>
+                    <option value = "Aisthesis, Stanford Undergraduate Journal of Classical Studies"></option>
+                    <option value = "Akasma Bellydance"></option>
+                    <option value = "Akwaaba Ghanaian Students Association"></option>
+                    <option value = "Alliance Streetdance"></option>
+                    <option value = "Alpha Chi Sigma"></option>
+                    <option value = "Alternative Spring Break"></option>
+                    <option value = "American Association of Petroleum Geologists, Stanford Student Chapter"></option>
+                    <option value = "American Indian Science and Engineering Society"></option>
+                    <option value = "American Institute of Aeronautics and Astronautics"></option>
+                    <option value = "American Medical Student Association Stanford Premedical Chapter"></option>
+                    <option value = "American Society for Engineering Education (Stanford Chapter)"></option>
+                    <option value = "American Society of Civil Engineers"></option>
+                    <option value = "Amnesty International, Stanford University Chapter"></option>
+                    <option value = "Anime in the Arts"></option>
+                    <option value = "Arbor Free Clinic"></option>
+                    <option value = "Argentinos en Stanford"></option>
+                    <option value = "Armed Forces Society"></option>
+                    <option value = "Armenian Students Association"></option>
+                    <option value = "ArtX"></option>
+                    <option value = "Asha for Education- Stanford Chapter"></option>
+                    <option value = "Asian American Graduate Student Association"></option>
+                    <option value = "Asian American Student Association"></option>
+                    <option value = "Asian American Theater Project"></option>
+                    <option value = "Asian Pacific American Medical Student Association"></option>
+                    <option value = "Asia-Pacific Student Entrepreneurship Society"></option>
+                    <option value = "Associated Students of Stanford University - Exec"></option>
+                    <option value = "Associated Students of Stanford University Speakers Bureau"></option>
+                    <option value = "Association of Chinese Students and Scholars at Stanford"></option>
+                    <option value = "Association of Computing Machinery"></option>
+                    <option value = "Bahai Association at Stanford"></option>
+                    <option value = "Ballet Folklorico de Stanford"></option>
+                    <option value = "Barrio Assistance"></option>
+                    <option value = "Basmati Raas"></option>
+                    <option value = "BELGICA"></option>
+                    <option value = "Biological Interdisciplinary Open Maker Environment"></option>
+                    <option value = "Biomedical Association for the Interest for Minority Students"></option>
+                    <option value = "Biomedical Engineering Society"></option>
+                    <option value = "Black Engineering Graduate Student Association"></option>
+                    <option value = "Black Family Gathering Committee"></option>
+                    <option value = "Black Graduate Students Association"></option>
+                    <option value = "Black Graduation Committee"></option>
+                    <option value = "Black in Computer Science at Stanford"></option>
+                    <option value = "Black Men's Forum"></option>
+                    <option value = "Black Pre-Law Society"></option>
+                    <option value = "Black Student Union"></option>
+                    <option value = "Blackstage"></option>
+                    <option value = "Brazilian Students Association"></option>
+                    <option value = "Bridging the Gap"></option>
+                    <option value = "Buddhist Community at Stanford"></option>
+                    <option value = "Business Association of Stanford Entrepreneurial Students"></option>
+                    <option value = "Caesura Journal"></option>
+                    <option value = "Cap and Gown"></option>
+                    <option value = "Cardinal Ballet Company"></option>
+                    <option value = "Cardinal Calypso"></option>
+                    <option value = "Cardinal Free Clinics"></option>
+                    <option value = "Cardinal Nights"></option>
+                    <option value = "Cardinal Squares"></option>
+                    <option value = "Cardinal West Coast Swing"></option>
+                    <option value = "Caribbean Students Association"></option>
+                    <option value = "Ceramics Club"></option>
+                    <option value = "Challah for Hunger"></option>
+                    <option value = "Chemical Engineering Graduate Students"></option>
+                    <option value = "Chi Alpha Christian Fellowship"></option>
+                    <option value = "Chinese Campus Evangelistic Fellowship"></option>
+                    <option value = "Chinese Undergraduate Student Union"></option>
+                    <option value = "Chinese Women Collective at Stanford"></option>
+                    <option value = "Christian Students"></option>
+                    <option value = "Class of 2020 - Senior Class"></option>
+                    <option value = "Class of 2021 - Junior Class"></option>
+                    <option value = "Class of 2022 - Sophomore Class"></option>
+                    <option value = "Class of 2023 - Frosh Council"></option>
+                    <option value = "Club Water Polo Team of Stanford"></option>
+                    <option value = "Coaching Corps Stanford Chapter"></option>
+                    <option value = "Code the Change"></option>
+                    <option value = "Colombian Student Association"></option>
+                    <option value = "Common Origins"></option>
+                    <option value = "Computational Text Analysis in the Social Sciences Student Group"></option>
+                    <option value = "Comunidad for Health Equity"></option>
+                    <option value = "Cornerstone"></option>
+                    <option value = "Counterpoint a cappella"></option>
+                    <option value = "Cross-disciplinary Healthcare Innovation Partnership at Stanford"></option>
+                    <option value = "CS+Social Good"></option>
+                    <option value = "Dancebreak"></option>
+                    <option value = "Derechos"></option>
+                    <option value = "Design for America"></option>
+                    <option value = "Disability Studies Committee"></option>
+                    <option value = "Doctors Without Borders Stanford Student Chapter"></option>
+                    <option value = "Dosti"></option>
+                    <option value = "Down With Gravity"></option>
+                    <option value = "DreamCatchers"></option>
+                    <option value = "Dutch@Stanford"></option>
+                    <option value = "DV8"></option>
+                    <option value = "Earthquake Engineering Research Institute (EERI) Stanford Chapter"></option>
+                    <option value = "East African Stanford Students Association"></option>
+                    <option value = "Educational Studies Program"></option>
+                    <option value = "Engineers for a Sustainable World - Stanford Chapter"></option>
+                    <option value = "Episcopal - Lutheran Campus Ministry"></option>
+                    <option value = "European Association at Stanford"></option>
+                    <option value = "Event Request Test Portal"></option>
+                    <option value = "Everyday People"></option>
+                    <option value = "Fake Portal"></option>
+                    <option value = "Falun Dafa at Stanford"></option>
+                    <option value = "Fascinate Publication"></option>
+                    <option value = "Fashion X"></option>
+                    <option value = "Fellowship of Christian Athletes in Action"></option>
+                    <option value = "Financial Officers' Portal"></option>
+                    <option value = "FLIP: First-Generation, Low-Income Partnership"></option>
+                    <option value = "Flying TreeHouse"></option>
+                    <option value = "French Stanford Student Association"></option>
+                    <option value = "Future Advancers of Science and Technology"></option>
+                    <option value = "Girls Teaching Girls To Code"></option>
+                    <option value = "GradQ"></option>
+                    <option value = "Graduate Catholic Student Association"></option>
+                    <option value = "Graduate Mathematics Outreach Organization"></option>
+                    <option value = "Graduate Multiracial Community"></option>
+                    <option value = "Graduate Music Studies Forum"></option>
+                    <option value = "Graduate Student Council"></option>
+                    <option value = "Graduate Students in Electrical Engineering"></option>
+                    <option value = "Graduate Students of Applied Physics and Physics"></option>
+                    <option value = "GSB Adam Smith Society"></option>
+                    <option value = "GSB Aerospace Business Club"></option>
+                    <option value = "GSB Africa Business Club"></option>
+                    <option value = "GSB Arts, Media & Entertainment Club"></option>
+                    <option value = "GSB Asia Business Student Association"></option>
+                    <option value = "GSB Band"></option>
+                    <option value = "GSB Basketball Club"></option>
+                    <option value = "GSB Big Ideas Club"></option>
+                    <option value = "GSB Black Business Student Association"></option>
+                    <option value = "GSB Cannabis Business Club"></option>
+                    <option value = "GSB Catholic Student Association"></option>
+                    <option value = "GSB Challenge 4 Charity"></option>
+                    <option value = "GSB Christians in Business"></option>
+                    <option value = "GSB Consumer & Retail Club"></option>
+                    <option value = "GSB Energy Club"></option>
+                    <option value = "GSB Entrepreneur Club"></option>
+                    <option value = "GSB Epicureans at the GSB"></option>
+                    <option value = "GSB Europe Club"></option>
+                    <option value = "GSB Finance & Investment Club"></option>
+                    <option value = "GSB FinTech Club"></option>
+                    <option value = "GSB First Generation and/or Low Income Club"></option>
+                    <option value = "GSB Food & Agribusiness Club"></option>
+                    <option value = "GSB Friends of TALK"></option>
+                    <option value = "GSB Future Of Mobility Club"></option>
+                    <option value = "GSB Game Club"></option>
+                    <option value = "GSB Gives Back"></option>
+                    <option value = "GSB Golf Club"></option>
+                    <option value = "GSB Government & Politics Club"></option>
+                    <option value = "GSB Greater China Business Club"></option>
+                    <option value = "GSB Health Care Club"></option>
+                    <option value = "GSB Hispanic Business Student Association"></option>
+                    <option value = "GSB Improvisational Theater Troupe"></option>
+                    <option value = "GSB India Club"></option>
+                    <option value = "GSB Jewish Business Student Association"></option>
+                    <option value = "GSB Latin American Student Association"></option>
+                    <option value = "GSB Management Consulting Club"></option>
+                    <option value = "GSB Master of Science in Management for Experienced Leaders Student Association (MSx)"></option>
+                    <option value = "GSB MBA Student Association"></option>
+                    <option value = "GSB Middle East and North Africa Club"></option>
+                    <option value = "GSB Midwest Club"></option>
+                    <option value = "GSB Outdoor Adventures"></option>
+                    <option value = "GSB PhD Association"></option>
+                    <option value = "GSB Pride"></option>
+                    <option value = "GSB Private Equity Club"></option>
+                    <option value = "GSB Product Club"></option>
+                    <option value = "GSB Real Estate Club"></option>
+                    <option value = "GSB Search Fund Club"></option>
+                    <option value = "GSB Show"></option>
+                    <option value = "GSB Shred"></option>
+                    <option value = "GSB Soccer Club"></option>
+                    <option value = "GSB Social Innovation Club"></option>
+                    <option value = "GSB Sports Management Club"></option>
+                    <option value = "GSB Sustainable Business Club"></option>
+                    <option value = "GSB Tech Club"></option>
+                    <option value = "GSB Texas Club"></option>
+                    <option value = "GSB Travel and Hospitality Club"></option>
+                    <option value = "GSB Venture Capital Club"></option>
+                    <option value = "GSB Veterans Club"></option>
+                    <option value = "GSB Wellbeing Club"></option>
+                    <option value = "GSB Wine Circle"></option>
+                    <option value = "GSB Women in Management"></option>
+                    <option value = "GSB/GSE Education Club"></option>
+                    <option value = "GSC-Programming"></option>
+                    <option value = "GSE Student Guild"></option>
+                    <option value = "Habla"></option>
+                    <option value = "Harry Potter Fan Club at Stanford University"></option>
+                    <option value = "Health Education Lifetime Partnerships (HELP) for Kids"></option>
+                    <option value = "Hellenic Association of Stanford"></option>
+                    <option value = "Hermanas de Stanford"></option>
+                    <option value = "Hindu Students Association"></option>
+                    <option value = "Hmong Student Union"></option>
+                    <option value = "Hong Kong Student Association"></option>
+                    <option value = "Hui o Na Moku"></option>
+                    <option value = "Iberia - Spanish Association at Stanford"></option>
+                    <option value = "Ideas Out Loud"></option>
+                    <option value = "Indian Stanford Student Association"></option>
+                    <option value = "InterGroup Dialogue Team"></option>
+                    <option value = "International Latino Business Association"></option>
+                    <option value = "International Policy Students Association"></option>
+                    <option value = "International Socialist Organization - Stanford"></option>
+                    <option value = "International Student Christian Outreach"></option>
+                    <option value = "International Undergraduate Community"></option>
+                    <option value = "InterVarsity Christian Fellowship"></option>
+                    <option value = "InterVarsity Graduate Christian Fellowship"></option>
+                    <option value = "J Street U Stanford"></option>
+                    <option value = "Jam Pac'd"></option>
+                    <option value = "Japanese Student Union"></option>
+                    <option value = "Jewish Student Association"></option>
+                    <option value = "JKA Shotokan of Stanford"></option>
+                    <option value = "Kaorihiva"></option>
+                    <option value = "Kayumanggi"></option>
+                    <option value = "Kids With Dreams"></option>
+                    <option value = "Korean Bible Study and Koinonia, Stanford"></option>
+                    <option value = "Korean-American Student Association"></option>
+                    <option value = "Kurdish Association for Justice"></option>
+                    <option value = "KZSU 90.1 FM"></option>
+                    <option value = "La Familia de Stanford"></option>
+                    <option value = "Latino Medical Student Association"></option>
+                    <option value = "Latinos in Theater"></option>
+                    <option value = "Latinos Unidos de Stanford"></option>
+                    <option value = "Latter-day Saint Student Association"></option>
+                    <option value = "L'Chayim Club: Chabad at Stanford"></option>
+                    <option value = "Legacy Dance Team"></option>
+                    <option value = "Leland Quarterly"></option>
+                    <option value = "Leland Stanford Junior University Marching Band"></option>
+                    <option value = "LGBTQ-Meds"></option>
+                    <option value = "LITES - Lighting Innovation and Technology Education at Stanford"></option>
+                    <option value = "Los Hermanos de Stanford"></option>
+                    <option value = "Los Salseros de Stanford"></option>
+                    <option value = "Malaysians at Stanford"></option>
+                    <option value = "Management Science & Engineering Graduate Student Association"></option>
+                    <option value = "March For Our Lives Stanford"></option>
+                    <option value = "Mariachi Cardenal de Stanford"></option>
+                    <option value = "Mechanical Engineering Women's Group"></option>
+                    <option value = "Medical Students with Disability and Chronic Illness"></option>
+                    <option value = "Men's Club Basketball"></option>
+                    <option value = "Mexican Association of Graduate Students at Stanford"></option>
+                    <option value = "MINT Magazine"></option>
+                    <option value = "Mixed Company"></option>
+                    <option value = "Modes of Knowing: Science, Religion, and Philosophy Club"></option>
+                    <option value = "Mua Lac Hong"></option>
+                    <option value = "Multiracial Identified Community at Stanford"></option>
+                    <option value = "Music Enriching the Lives of Developing Youth"></option>
+                    <option value = "Muslim Student Union"></option>
+                    <option value = "New Organization Portal"></option>
+                    <option value = "Nigerian Students Association (Naija)"></option>
+                    <option value = "Noopur"></option>
+                    <option value = "Nuestra Grad"></option>
+                    <option value = "OAPE Party Registration"></option>
+                    <option value = "Oasis Campus Ministry"></option>
+                    <option value = "Off-campus Fundraising Portal"></option>
+                    <option value = "Organization of International Health"></option>
+                    <option value = "Orthodox Christian Fellowship at Stanford"></option>
+                    <option value = "O-Tone"></option>
+                    <option value = "Out in Science, Technology, Engineering and Mathematics at Stanford"></option>
+                    <option value = "Pakistanis at Stanford"></option>
+                    <option value = "Palm Drive Records"></option>
+                    <option value = "Parakaleo Christian Ministries"></option>
+                    <option value = "Partners in Health | Engage"></option>
+                    <option value = "People for Animal Welfare"></option>
+                    <option value = "Persian Student Association"></option>
+                    <option value = "Physics Undergraduate Women and Gender Minorities at Stanford"></option>
+                    <option value = "Pilipino American Student Union"></option>
+                    <option value = "Power to ACT: Abilities Coming Together"></option>
+                    <option value = "Presidents' Portal"></option>
+                    <option value = "Primary Care Progress"></option>
+                    <option value = "Professional Art Society of Stanford"></option>
+                    <option value = "PULSE Magazine"></option>
+                    <option value = "Quiz Bowl Club"></option>
+                    <option value = "Ram's Head Theatrical Society"></option>
+                    <option value = "Ranchers and Farmers Society of Stanford"></option>
+                    <option value = "Reformed University Fellowship at Stanford"></option>
+                    <option value = "Restorative Film Collective"></option>
+                    <option value = "Ritmo!"></option>
+                    <option value = "Robber Barons Sketch Comedy"></option>
+                    <option value = "Ruedamores de Stanford"></option>
+                    <option value = "Russian Student Association"></option>
+                    <option value = "Saudi Arabian Students Organization"></option>
+                    <option value = "Scandinavians at Stanford"></option>
+                    <option value = "Science Policy Group at Stanford"></option>
+                    <option value = "Scientists Speak Up"></option>
+                    <option value = "Sexual Health Peer Resources Center"></option>
+                    <option value = "Side by Side"></option>
+                    <option value = "Sikh Students Association at Stanford"></option>
+                    <option value = "Singaporeans at Stanford"></option>
+                    <option value = "SLS Against Gendered Violence"></option>
+                    <option value = "SLS American Constitution Society"></option>
+                    <option value = "SLS Antitrust Law and Policy Association"></option>
+                    <option value = "SLS Asian Pacific Islander Law Student Association"></option>
+                    <option value = "SLS BioLaw & Health Policy Society"></option>
+                    <option value = "SLS Black Law Students Association"></option>
+                    <option value = "SLS Blockchain Law and Information Society"></option>
+                    <option value = "SLS China Law & Policy Association"></option>
+                    <option value = "SLS Christian Fellowship"></option>
+                    <option value = "SLS Criminal Law Society"></option>
+                    <option value = "SLS Drama Society"></option>
+                    <option value = "SLS Election Law Project"></option>
+                    <option value = "SLS Energy and Infrastructure Club"></option>
+                    <option value = "SLS Entrepreneurship Club"></option>
+                    <option value = "SLS Environmental Law Society"></option>
+                    <option value = "SLS Federalist Society"></option>
+                    <option value = "SLS First Generation and Low-Income Professionals"></option>
+                    <option value = "SLS First Person"></option>
+                    <option value = "SLS If/When/How"></option>
+                    <option value = "SLS International Arbitration Association"></option>
+                    <option value = "SLS International Law Society"></option>
+                    <option value = "SLS International Refugee Assistance Project"></option>
+                    <option value = "SLS J. Reuben Clark Society"></option>
+                    <option value = "SLS JD/MBA Club"></option>
+                    <option value = "SLS Jewish Law Student Association"></option>
+                    <option value = "SLS Law Students for Disability Rights"></option>
+                    <option value = "SLS Middle Eastern and South Asian Law Students Association"></option>
+                    <option value = "SLS National Lawyers Guild"></option>
+                    <option value = "SLS Native American Law Student Association"></option>
+                    <option value = "SLS Older and Wiser Law Students"></option>
+                    <option value = "SLS OUTLAW"></option>
+                    <option value = "SLS Shaking the Foundations Conference"></option>
+                    <option value = "SLS Stanford Advocates for Immigrants' Rights"></option>
+                    <option value = "SLS Stanford Artifical Intelligence Law Society"></option>
+                    <option value = "SLS Stanford Critical Legal Studies"></option>
+                    <option value = "SLS Stanford Entertainment and Sports Law Association"></option>
+                    <option value = "SLS Stanford Human Rights Law Association"></option>
+                    <option value = "SLS Stanford Intellectual Property Association"></option>
+                    <option value = "SLS Stanford Latino Law Students Association"></option>
+                    <option value = "SLS Stanford Law and Technology Association"></option>
+                    <option value = "SLS Stanford Law Association"></option>
+                    <option value = "SLS Stanford Law Democrats"></option>
+                    <option value = "SLS Stanford Law Private Practice Association"></option>
+                    <option value = "SLS Stanford Law School Mock Trial Team"></option>
+                    <option value = "SLS Stanford Law Veterans Organization"></option>
+                    <option value = "SLS Stanford National Security and the Law Society"></option>
+                    <option value = "SLS Stanford Plaintiffs' Lawyers Association"></option>
+                    <option value = "SLS Stanford Prisoner Advocacy and Resources Coalition"></option>
+                    <option value = "SLS Stanford Program in Law and Society"></option>
+                    <option value = "SLS Stanford Public Interest Law Foundation"></option>
+                    <option value = "SLS Student Animal Legal Defense Fund"></option>
+                    <option value = "SLS Tax Club"></option>
+                    <option value = "SLS Women in Politics"></option>
+                    <option value = "SLS Women of Color Collective"></option>
+                    <option value = "SLS Women of Stanford Law"></option>
+                    <option value = "SLS Youth and Education Advocates of Stanford"></option>
+                    <option value = "Society for Industrial and Applied Mathematics (SIAM), Stanford Student Chapter"></option>
+                    <option value = "Society for International Affairs at Stanford"></option>
+                    <option value = "Society for the Advancement of Chicano/Latinos and Native Americans in Science"></option>
+                    <option value = "Society of Black Scientists and Engineers"></option>
+                    <option value = "Society of Latinx Engineers"></option>
+                    <option value = "Society of Petroleum Engineers, Stanford Student Chapter"></option>
+                    <option value = "Society of Women Engineers"></option>
+                    <option value = "Spicmacay"></option>
+                    <option value = "Stand Up, D Comedy Club"></option>
+                    <option value = "Stanford ACM SIGGRAPH Student Chapter"></option>
+                    <option value = "Stanford Advanced Degree Candidate Consulting Club"></option>
+                    <option value = "Stanford Aerobics and Yoga"></option>
+                    <option value = "Stanford African Students Association"></option>
+                    <option value = "Stanford Alpine Club"></option>
+                    <option value = "Stanford Alpine Project"></option>
+                    <option value = "Stanford Alpine Ski Team"></option>
+                    <option value = "Stanford Alzheimer's Alliance"></option>
+                    <option value = "Stanford American Indian Organization"></option>
+                    <option value = "Stanford American Indigenous Medical Students"></option>
+                    <option value = "Stanford Anthology for Youth"></option>
+                    <option value = "Stanford Applied Cybersecurity"></option>
+                    <option value = "Stanford Archery Program"></option>
+                    <option value = "Stanford Artificial Intelligence Group"></option>
+                    <option value = "Stanford Arts Review"></option>
+                    <option value = "Stanford Asian American Activism Committee"></option>
+                    <option value = "Stanford Astronomical Society"></option>
+                    <option value = "Stanford Australians and New Zealanders"></option>
+                    <option value = "Stanford Austria Club"></option>
+                    <option value = "Stanford Axe Committee"></option>
+                    <option value = "Stanford Badminton Club"></option>
+                    <option value = "Stanford Bhakti Yoga Club"></option>
+                    <option value = "Stanford Bhangra Team"></option>
+                    <option value = "Stanford Biosciences Student Association"></option>
+                    <option value = "Stanford Birdwatching Club"></option>
+                    <option value = "Stanford Black Bioscience Organization"></option>
+                    <option value = "Stanford Black Pre-Medical Organization"></option>
+                    <option value = "Stanford Blockchain Club"></option>
+                    <option value = "Stanford Canadian Club"></option>
+                    <option value = "Stanford Capoeira"></option>
+                    <option value = "Stanford Cartographic Society"></option>
+                    <option value = "Stanford Catalan Association"></option>
+                    <option value = "Stanford Ceili Dance"></option>
+                    <option value = "Stanford Chamber Chorale"></option>
+                    <option value = "Stanford Chaparral"></option>
+                    <option value = "Stanford Chapter of American Medical Association - Medical Student Section"></option>
+                    <option value = "Stanford Chess Club"></option>
+                    <option value = "Stanford Chinese Dance"></option>
+                    <option value = "Stanford Chinese Sing"></option>
+                    <option value = "Stanford Classics in Theater"></option>
+                    <option value = "Stanford Climbing"></option>
+                    <option value = "Stanford Club Baseball"></option>
+                    <option value = "Stanford Club Ice Hockey"></option>
+                    <option value = "Stanford Club Sports"></option>
+                    <option value = "Stanford Club Swimming"></option>
+                    <option value = "Stanford Club Tennis"></option>
+                    <option value = "Stanford Club Triathlon Team"></option>
+                    <option value = "Stanford Collaborative Orchestra"></option>
+                    <option value = "Stanford College Diabetes Network"></option>
+                    <option value = "Stanford College Republicans"></option>
+                    <option value = "Stanford Community Gardens"></option>
+                    <option value = "Stanford Complexity Group"></option>
+                    <option value = "Stanford Concert Network"></option>
+                    <option value = "Stanford Cooking Society"></option>
+                    <option value = "Stanford Creative Writing Society"></option>
+                    <option value = "Stanford Cycling"></option>
+                    <option value = "Stanford Dance Marathon"></option>
+                    <option value = "Stanford Debate Society"></option>
+                    <option value = "Stanford Democrats"></option>
+                    <option value = "Stanford Dominican Association"></option>
+                    <option value = "Stanford Drag Troupe"></option>
+                    <option value = "Stanford Dragon Boat"></option>
+                    <option value = "Stanford Economics Association"></option>
+                    <option value = "Stanford Education Technology Society"></option>
+                    <option value = "Stanford Effective Altruism"></option>
+                    <option value = "Stanford Energy Club"></option>
+                    <option value = "Stanford Entrepreneurs for Latin America"></option>
+                    <option value = "Stanford Equestrian Team"></option>
+                    <option value = "Stanford Ethiopian and Eritrean Student Association"></option>
+                    <option value = "Stanford Etz Chaim"></option>
+                    <option value = "Stanford Figure Skating Club"></option>
+                    <option value = "Stanford Film Society"></option>
+                    <option value = "Stanford Finance"></option>
+                    <option value = "Stanford Fleet Street Singers"></option>
+                    <option value = "Stanford Fly Fishing and Tying Club"></option>
+                    <option value = "Stanford Food Recovery"></option>
+                    <option value = "Stanford Game^2 Theory Club"></option>
+                    <option value = "Stanford Gaming Society"></option>
+                    <option value = "Stanford Genetic Counseling Student Interest Group"></option>
+                    <option value = "Stanford German Student Association"></option>
+                    <option value = "Stanford Gleaning Project"></option>
+                    <option value = "Stanford Golf League"></option>
+                    <option value = "Stanford Gospel Choir"></option>
+                    <option value = "Stanford Graduate Society of Women Engineers"></option>
+                    <option value = "Stanford Grappling Club"></option>
+                    <option value = "Stanford Gregorian Society"></option>
+                    <option value = "Stanford Harmonics"></option>
+                    <option value = "Stanford Health Innovations in Future Technologies"></option>
+                    <option value = "Stanford Health Justice Coalition"></option>
+                    <option value = "Stanford Hermanas in STEM"></option>
+                    <option value = "Stanford ignitED"></option>
+                    <option value = "Stanford Improvisors"></option>
+                    <option value = "Stanford In Government"></option>
+                    <option value = "Stanford India Association"></option>
+                    <option value = "Stanford Indonesian Student Union"></option>
+                    <option value = "Stanford Institute of Electrical and Electronics Engineers"></option>
+                    <option value = "Stanford International Security Undergraduate Network"></option>
+                    <option value = "Stanford Irish Association"></option>
+                    <option value = "Stanford Israel Association"></option>
+                    <option value = "Stanford Italian Society"></option>
+                    <option value = "Stanford Japanese Association"></option>
+                    <option value = "Stanford Jazz Orchestra"></option>
+                    <option value = "Stanford Jewish Queers"></option>
+                    <option value = "Stanford Judo Club Team"></option>
+                    <option value = "Stanford Jump Rope"></option>
+                    <option value = "Stanford Kendo Club"></option>
+                    <option value = "Stanford Kenpo Karate Association"></option>
+                    <option value = "Stanford Khmer Association"></option>
+                    <option value = "Stanford LGBT Business Alliance"></option>
+                    <option value = "Stanford Light Opera Company"></option>
+                    <option value = "Stanford Lion Dance"></option>
+                    <option value = "Stanford Marketing Group"></option>
+                    <option value = "Stanford Martial Arts Program"></option>
+                    <option value = "Stanford Materials Research Society"></option>
+                    <option value = "Stanford Medical Christian Fellowship"></option>
+                    <option value = "Stanford Medical Students Association"></option>
+                    <option value = "Stanford Medicine Arts Collective"></option>
+                    <option value = "Stanford Mendicants"></option>
+                    <option value = "Stanford Men's Club Soccer Team"></option>
+                    <option value = "Stanford Men's Lacrosse"></option>
+                    <option value = "Stanford Men's Rugby"></option>
+                    <option value = "Stanford Men's Ultimate Team"></option>
+                    <option value = "Stanford Men's Volleyball Club"></option>
+                    <option value = "Stanford Mental Health Outreach"></option>
+                    <option value = "Stanford Middle East Ensemble"></option>
+                    <option value = "Stanford Mock Trial"></option>
+                    <option value = "Stanford Music + Mentorship"></option>
+                    <option value = "Stanford Muslim Medical Association"></option>
+                    <option value = "Stanford National Association for the Advancement of Colored People"></option>
+                    <option value = "Stanford Native American Graduate Students"></option>
+                    <option value = "Stanford Nonproliferation Activism Project"></option>
+                    <option value = "Stanford Oceans Society"></option>
+                    <option value = "Stanford Outdoor Outreach Program"></option>
+                    <option value = "Stanford Outdoors"></option>
+                    <option value = "Stanford Pen People"></option>
+                    <option value = "Stanford Physical Medicine and Rehabilitation Interest Group"></option>
+                    <option value = "Stanford Planned Parenthood Generation Action"></option>
+                    <option value = "Stanford Poetry Society"></option>
+                    <option value = "Stanford Polish Student Association"></option>
+                    <option value = "Stanford Political Journal"></option>
+                    <option value = "Stanford Political Union"></option>
+                    <option value = "Stanford Polo Club"></option>
+                    <option value = "Stanford Polymer Collective"></option>
+                    <option value = "Stanford Powwow"></option>
+                    <option value = "Stanford Practical Ethics Club"></option>
+                    <option value = "Stanford Pre-Business Association"></option>
+                    <option value = "Stanford Pre-Law Society"></option>
+                    <option value = "Stanford Pre-Medical Asian Pacific American Medical Student Association"></option>
+                    <option value = "Stanford Premedical Association"></option>
+                    <option value = "Stanford Q&A"></option>
+                    <option value = "Stanford Quantum Computing Association"></option>
+                    <option value = "Stanford Quidditch"></option>
+                    <option value = "Stanford Raagapella"></option>
+                    <option value = "Stanford Real Estate Club"></option>
+                    <option value = "Stanford Robotics Club"></option>
+                    <option value = "Stanford Roots"></option>
+                    <option value = "Stanford Running Club"></option>
+                    <option value = "Stanford Science Penpals"></option>
+                    <option value = "Stanford Science, Technology, Engineering, Arts, & Mathematics"></option>
+                    <option value = "Stanford Shakespeare Company"></option>
+                    <option value = "Stanford Smart Woman Securities"></option>
+                    <option value = "Stanford Social Entrepreneurial Student's Association"></option>
+                    <option value = "Stanford Society of Pediatric Psychology"></option>
+                    <option value = "Stanford Solar Car Project"></option>
+                    <option value = "Stanford South Asian Society"></option>
+                    <option value = "Stanford Sphere"></option>
+                    <option value = "Stanford Spikeball Roundnet Club"></option>
+                    <option value = "Stanford Spoken Word Collective"></option>
+                    <option value = "Stanford Sports Analytics Club"></option>
+                    <option value = "Stanford Squash Men's Intercollegiate Team"></option>
+                    <option value = "Stanford Storyboard Club"></option>
+                    <option value = "Stanford Student Biodesign & Biopharma"></option>
+                    <option value = "Stanford Student Biotechnology Group"></option>
+                    <option value = "Stanford Student Space Initiative"></option>
+                    <option value = "Stanford Students for Housing Justice"></option>
+                    <option value = "Stanford Students for Justice in Palestine"></option>
+                    <option value = "Stanford Students for Life"></option>
+                    <option value = "Stanford Students for Queer Liberation"></option>
+                    <option value = "Stanford Students in Applied Research"></option>
+                    <option value = "Stanford Students In Entertainment"></option>
+                    <option value = "Stanford Swing Dancers"></option>
+                    <option value = "Stanford Symbolic Systems Society"></option>
+                    <option value = "Stanford Symphony Orchestra"></option>
+                    <option value = "Stanford Synapse: Brain Injury Support Group"></option>
+                    <option value = "Stanford Table Tennis Club"></option>
+                    <option value = "Stanford Taekwondo"></option>
+                    <option value = "Stanford Taiko"></option>
+                    <option value = "Stanford Taiwanese Student Association"></option>
+                    <option value = "Stanford Tango Club"></option>
+                    <option value = "Stanford Theater Laboratory"></option>
+                    <option value = "Stanford Transfers Network"></option>
+                    <option value = "Stanford Turkish Student Association"></option>
+                    <option value = "Stanford Turning Point USA"></option>
+                    <option value = "Stanford Undergraduate Hospice and Palliative Care"></option>
+                    <option value = "Stanford Undergraduate Materials Society"></option>
+                    <option value = "Stanford Undergraduate Neuroscience Society"></option>
+                    <option value = "Stanford Undergraduate Psychology Association"></option>
+                    <option value = "Stanford Undergraduate Research Association"></option>
+                    <option value = "Stanford Undergraduate Research Journal"></option>
+                    <option value = "Stanford Undergraduate Veterans Association"></option>
+                    <option value = "Stanford Undergraduates in Mechanical Engineering"></option>
+                    <option value = "Stanford University Mathematical Organization"></option>
+                    <option value = "Stanford University PA Student Association"></option>
+                    <option value = "Stanford University Physics Society"></option>
+                    <option value = "Stanford University Postdoctoral Association"></option>
+                    <option value = "Stanford University Wing Chun Student Association"></option>
+                    <option value = "Stanford Unmanned Aerial Vehicle Engineers, Entrepreneurs, and Enthusiasts"></option>
+                    <option value = "Stanford Uruguayan Students Association"></option>
+                    <option value = "Stanford Venture Capital Club"></option>
+                    <option value = "Stanford Video Game Association"></option>
+                    <option value = "Stanford Vietnamese Student Association"></option>
+                    <option value = "Stanford Wind Symphony"></option>
+                    <option value = "Stanford Wine Society"></option>
+                    <option value = "Stanford Women Association of Physician-Scientists"></option>
+                    <option value = "Stanford Women in Business"></option>
+                    <option value = "Stanford Women in Design"></option>
+                    <option value = "Stanford Women in Earth Sciences"></option>
+                    <option value = "Stanford Women in Finance"></option>
+                    <option value = "Stanford Women in Fluid Dynamics"></option>
+                    <option value = "Stanford Women in Medicine"></option>
+                    <option value = "Stanford Women in Politics"></option>
+                    <option value = "Stanford Women's Club Lacrosse"></option>
+                    <option value = "Stanford Women's Club Soccer"></option>
+                    <option value = "Stanford Women's Club Volleyball"></option>
+                    <option value = "Stanford Women's Rugby"></option>
+                    <option value = "Stanford Women's Ultimate"></option>
+                    <option value = "Stanford Womxn in Cannabis"></option>
+                    <option value = "Stanford Womxn in Comedy"></option>
+                    <option value = "Stanford Womxn in Law"></option>
+                    <option value = "Stanford Worldbuilding Activities Network"></option>
+                    <option value = "Stanford Wushu Club"></option>
+                    <option value = "Stanford XR"></option>
+                    <option value = "Stanford Young Democratic Socialists of America"></option>
+                    <option value = "Stanford Zen Society"></option>
+                    <option value = "Stanford Zumba"></option>
+                    <option value = "Strategies for Ecology Education, Diversity and Sustainability, Stanford Chapter"></option>
+                    <option value = "Student Activities and Leadership Office"></option>
+                    <option value = "Student Alliance for Justice in Education"></option>
+                    <option value = "Student Arts Portal"></option>
+                    <option value = "Student Immigrant Empowerment Project at Stanford"></option>
+                    <option value = "Student Interest Group in Neurology"></option>
+                    <option value = "Student National Medical Association"></option>
+                    <option value = "Student Organization Advisors' Forum"></option>
+                    <option value = "Students for a Sustainable Stanford"></option>
+                    <option value = "Students for Alternatives to Militarism"></option>
+                    <option value = "Students Supporting Body Positivity"></option>
+                    <option value = "Swingtime"></option>
+                    <option value = "Taiwanese Cultural Society"></option>
+                    <option value = "Talisman"></option>
+                    <option value = "tapTH@T"></option>
+                    <option value = "Tau Beta Pi"></option>
+                    <option value = "Team HBV"></option>
+                    <option value = "Testimony A Cappella"></option>
+                    <option value = "Thai Student Association"></option>
+                    <option value = "The Arab Student Association at Stanford"></option>
+                    <option value = "The Black Feminist Collective"></option>
+                    <option value = "The Blackprint: Building Black Business Leaders and Entrepreneurs"></option>
+                    <option value = "The Bridge Peer Counseling Center"></option>
+                    <option value = "The Charles R. Blyth Fund"></option>
+                    <option value = "The Dish on Science"></option>
+                    <option value = "The Humor Club"></option>
+                    <option value = "The Komm Collective"></option>
+                    <option value = "The Science Bus"></option>
+                    <option value = "The Stanford Bicycle Project"></option>
+                    <option value = "The Stanford Daily"></option>
+                    <option value = "The Stanford Flipside"></option>
+                    <option value = "The Stanford Fund Partnership"></option>
+                    <option value = "The Stanford Happiness Collective"></option>
+                    <option value = "The Stanford Libertarians"></option>
+                    <option value = "The Stanford Optical Society"></option>
+                    <option value = "The Stanford Review"></option>
+                    <option value = "The Word"></option>
+                    <option value = "Tibetan Student Union"></option>
+                    <option value = "Traveling Trees"></option>
+                    <option value = "TreeHacks"></option>
+                    <option value = "Tzu Chi Collegiate Association, Stanford Chapter"></option>
+                    <option value = "Undergraduate Catholic Student Association"></option>
+                    <option value = "Undergraduate Chinese American Association"></option>
+                    <option value = "United Students for Veterans' Health"></option>
+                    <option value = "Unscripted Playhouse of Stanford"></option>
+                    <option value = "Untitled Journal"></option>
+                    <option value = "Urban Styles"></option>
+                    <option value = "Venezuelan Student Association"></option>
+                    <option value = "Veritas@Stanford"></option>
+                    <option value = "Viennese Ball Committee"></option>
+                    <option value = "Voluntary Student Organizations"></option>
+                    <option value = "Volunteers In Latin America"></option>
+                    <option value = "Vox Clara: A Journal of Christian Thought at Stanford"></option>
+                    <option value = "VPGE"></option>
+                    <option value = "VSO Testing Portal"></option>
+                    <option value = "We Continue: Suicide Prevention Empowerment"></option>
+                    <option value = "Women and Medicine"></option>
+                    <option value = "Women and Youth Supporting Each Other"></option>
+                    <option value = "Women in Aeronautics and Astronautics"></option>
+                    <option value = "Women in Computer Science"></option>
+                    <option value = "Women in Electrical Engineering"></option>
+                    <option value = "Women in Mathematics, Statistics, and Computational Engineering"></option>
+                    <option value = "Women's Club Basketball"></option>
+                    <option value = "Womxn's Coalition"></option>
+                    <option value = "Working with Youth"></option>
+                    <option value = "World Peace Buddhists"></option>
+                    <option value = "XTRM"></option>
+                    <option value = "Young Life Stanford"></option>                                       
+                </datalist>
+
                 <div class="pages">
                   <button onclick="toggle_visibility('div-1', 'div-2')" class="button">Next</button>
                 </div>
               </div>
 
               <div id="div-2" class="intro">
-                <h2><strong>What is R-Ladies</strong></h2>
-                <p><a href="https://rladies.org/">R-Ladies</a> is a <b>global organisation that aims to promote gender diversity in the R community. </b></p>
-                <p>To <b>facilitate communication </b>and <b>enable networking in a safe environment </b>among all R-Ladies worldwide <b>we set up this Slack.</b></p>
+                <h2><strong>What is Stanford VSO</strong></h2>
+                <p><a href="https://rladies.org/">Stanford VSO</a> is a <b>global organisation that aims to promote gender diversity in the R community. </b></p>
+                <p>To <b>facilitate communication </b>and <b>enable networking in a safe environment </b>among all Stanford VSO worldwide <b>we set up this Slack.</b></p>
                 <div class="pages">
                   <button onclick="toggle_visibility('div-2', 'div-1')" class="button">Previous</button>
                   <button onclick="toggle_visibility('div-2', 'div-3')" class="button">Next</button>
@@ -66,7 +731,7 @@
                   <li>Advertise events and conferences</li>
                   <li>Share #rstats news</li>
                   <li>Share resources</li>
-                  <li>Bring in your ideas for the R-Ladies community</li>
+                  <li>Bring in your ideas for the Stanford VSO community</li>
                 </ul>
                 <div class="pages">
                   <button onclick="toggle_visibility('div-4', 'div-3')" class="button">Previous</button>
@@ -77,7 +742,7 @@
               <div id="div-5" class="intro">
                 <h2><strong>What is this Slack not for?</strong></h2>
                 <ul> There are a few things <b>this Slack is not meant for:</b>
-                  <li><b>Promoting commercial products </b>(if you would like to provide a discount to R-Ladies members, please discuss with the <a href="mailto:leadership@rladies.org">leadership team first</a>).</li>
+                  <li><b>Promoting commercial products </b>(if you would like to provide a discount to Stanford VSO members, please discuss with the <a href="mailto:leadership@rladies.org">leadership team first</a>).</li>
                   <li><b>Sharing inappropriate content. </b>Examples are disturbing images or videos, fashions that promote negative values, health risks or bad habits, false information, offensive or mocking content.</li>
                 </ul>
                 <p>If you are unsure whether a post is suitable, best is to ask "@Community Management Team" within Slack or send an email at <a href="mailto:slack@rladies.org">slack@rladies.org</a>.</p>
@@ -90,7 +755,7 @@
               <div id="div-6" class="intro">
                 <h2><strong>Code of Conduct</strong></h2>
                 <p>A <a href="https://en.wikipedia.org/wiki/Code_of_conduct">Code of Conduct</a> is a <b>list of rules that support an inclusive culture and protect the members of a group. </b></p>
-                <p>Let’s make R-Ladies Community Slack a harassment-free experience for everyone.</p>
+                <p>Let’s make Stanford VSO Community Slack a harassment-free experience for everyone.</p>
                 <ul> We do not tolerate harassment:
                   <li>Offensive comments related to gender, gender identity and expression, sexual orientation, disability, mental illness, neuro(a)typicality, physical appearance, body size, age, race, or religion.</li>
                   <li>Unwelcome comments regarding a person's lifestyle choices and practices.</li>
@@ -98,7 +763,7 @@
                   <li>Unwelcome sexual attention.</li>
                   <li>Continued one-on-one communication after requests to cease.</li>
                 </ul>
-                <p>You find the full R-Ladies Code of Conduct <a href="https://github.com/rladies/starter-kit/wiki/Code-of-Conduct">here</a> in the English, Spanish and Portuguese versions.</p>
+                <p>You find the full Stanford VSO Code of Conduct <a href="https://github.com/rladies/starter-kit/wiki/Code-of-Conduct">here</a> in the English, Spanish and Portuguese versions.</p>
                 <div class="pages">
                   <button onclick="toggle_visibility('div-6', 'div-5')" class="button">Previous</button>
                   <button onclick="toggle_visibility('div-6', 'div-7')" class="button">Next</button>
@@ -119,10 +784,10 @@
               
               <div id="div-8" class="intro">
                 <h2><strong>Reporting</strong></h2>
-                <p><b>If you are being harassed </b>by a member/guest/participant of/at R-Ladies, <b>notice that someone else is being harassed, or have any other concerns, please contact the Global Leadership Team via reporting@rladies.org. </b></p>
+                <p><b>If you are being harassed </b>by a member/guest/participant of/at Stanford VSO, <b>notice that someone else is being harassed, or have any other concerns, please contact the Global Leadership Team via reporting@rladies.org. </b></p>
                 <p>If a participant engages in harassing behaviour, the Global Leadership Team may take any action they deem appropriate.</p>
                 <h2><strong>Consequences</strong></h2>
-                <p>Participants asked to stop any harassing behaviour are expected to comply immediately. If a participant engages in harassing behaviour, the Global Leadership Team may take any action they deem appropriate, up to and including expulsion from all R-Ladies spaces (including meetups, Twitter, Slack, mailing lists, both online and offline) and identification of the participant as a harasser to other R-Ladies members or the general public.</p>
+                <p>Participants asked to stop any harassing behaviour are expected to comply immediately. If a participant engages in harassing behaviour, the Global Leadership Team may take any action they deem appropriate, up to and including expulsion from all Stanford VSO spaces (including meetups, Twitter, Slack, mailing lists, both online and offline) and identification of the participant as a harasser to other Stanford VSO members or the general public.</p>
                 <div class="pages">
                   <button onclick="toggle_visibility('div-8', 'div-7')" class="button">Previous</button>
                   <button onclick="toggle_visibility('div-8', 'div-9')" class="button">Next</button>
@@ -141,21 +806,13 @@
               
               <div id="div-10" class="intro">
                 <h2><strong>Contact</strong></h2>
-                <p>If you have a question regarding R-Ladies community slack please contact <a href="mailto:slack@rladies.org">slack@rladies.org</a>.</p>
-                <p>If you are interested in starting an R-Ladies chapter in your city (awesome!), please contact <a href="mailto:info@rladies.org">info@rladies.org</a>.</p>
+                <p>If you have a question regarding Stanford VSO community slack please contact <a href="mailto:slack@rladies.org">slack@rladies.org</a>.</p>
+                <p>If you are interested in starting an Stanford VSO chapter in your city (awesome!), please contact <a href="mailto:info@rladies.org">info@rladies.org</a>.</p>
                 <p>If you would like to report harassment or violation of parts of the Code of Conduct, please contact <a href="mailto:reporting@rladies.org">reporting@rladies.org</a>.</p>
                 <p>Within Slack you can contact us via "@Community Management Team".</p>
                 <div class="pages">
                   <button onclick="toggle_visibility('div-10', 'div-9')" class="button">Previous</button>
                   <button onclick="toggle_visibility('div-10', 'div-11')" class="button">Next</button>
-                </div>
-              </div>
-
-              <div id="div-11" class="intro">
-                <h2><strong>Leader Information</strong></h2>
-                <div class="pages">
-                  <button onclick="toggle_visibility('div-11', 'div-10')" class="button">Previous</button>
-                  <button onclick="toggle_visibility('div-11', 'div-12')" class="button">Next</button>
                 </div>
               </div>
 
@@ -193,7 +850,7 @@
       var e = document.getElementById(current);
       var number = parseInt(next.split('-')[1])
 
-      if(number < 12) {
+      if(number < 11) {
         var next = document.getElementById(next)
       } else {
         var next = document.getElementById('join-form')
@@ -203,35 +860,6 @@
       next.style.display = 'block'
       }
   </script>
-  <script>
-    var select = document.getElementById("selectNumber"); 
-    var options = ["1", "2", "3", "4", "5"];
-    for(var i = 0; i < options.length; i++){
-        var opt = option[i];
-        var el = document.createElement("option");
-        el.textContent = opt;
-        el.value = opt;
-        select.appendChild(el);
-    }
-  </script>
-  <script>
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            myFunction(this);
-        }
-    };
-    xhttp.open("GET", "orgs.xml", true);
-    xhttp.send();
-    
-    function myFunction(xml) {
-        var xmlDoc = xml.responseXML;
-        var x = xmlDoc.getElementsByTagName('name')[0];
-        var y = x.childNodes[0];
-        document.getElementById("demo").innerHTML = y.nodeValue;
-    }
-    </script>
-  
 
 </body>
 </html>

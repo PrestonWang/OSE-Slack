@@ -1,0 +1,133 @@
+{
+    "ok": true,
+    "channels": [
+        {
+            "id": "CTXESBTDE",
+            "name": "financialofficers",
+            "is_channel": true,
+            "is_group": false,
+            "is_im": false,
+            "created": 1581536594,
+            "is_archived": false,
+            "is_general": false,
+            "unlinked": 0,
+            "name_normalized": "financialofficers",
+            "is_shared": false,
+            "parent_conversation": null,
+            "creator": "WNNLR372N",
+            "is_moved": 0,
+            "is_ext_shared": false,
+            "is_org_shared": false,
+            "shared_team_ids": [
+                "TT622CF9Q"
+            ],
+            "internal_team_ids": [
+                "TT622CF9Q"
+            ],
+            "pending_shared": [],
+            "pending_connected_team_ids": [],
+            "is_pending_ext_shared": false,
+            "is_member": true,
+            "is_private": true,
+            "is_mpim": false,
+            "topic": {
+                "value": "",
+                "creator": "",
+                "last_set": 0
+            },
+            "purpose": {
+                "value": "channel for financial officers",
+                "creator": "WNNLR372N",
+                "last_set": 1581536596
+            },
+            "num_members": 2
+        },
+        {
+            "id": "CTXK9A24E",
+            "name": "newmembers",
+            "is_channel": true,
+            "is_group": false,
+            "is_im": false,
+            "created": 1581448673,
+            "is_archived": false,
+            "is_general": false,
+            "unlinked": 0,
+            "name_normalized": "newmembers",
+            "is_shared": false,
+            "parent_conversation": null,
+            "creator": "WNNLR372N",
+            "is_moved": 0,
+            "is_ext_shared": false,
+            "is_org_shared": false,
+            "shared_team_ids": [
+                "TT622CF9Q"
+            ],
+            "internal_team_ids": [
+                "TT622CF9Q"
+            ],
+            "pending_shared": [],
+            "pending_connected_team_ids": [],
+            "is_pending_ext_shared": false,
+            "is_member": true,
+            "is_private": true,
+            "is_mpim": false,
+            "topic": {
+                "value": "",
+                "creator": "",
+                "last_set": 0
+            },
+            "purpose": {
+                "value": "",
+                "creator": "",
+                "last_set": 0
+            },
+            "num_members": 4
+        },
+        {
+            "id": "GTXFC2GSZ",
+            "name": "presidents",
+            "is_channel": false,
+            "is_group": true,
+            "is_im": false,
+            "created": 1581536569,
+            "is_archived": false,
+            "is_general": false,
+            "unlinked": 0,
+            "name_normalized": "presidents",
+            "is_shared": false,
+            "parent_conversation": null,
+            "creator": "WNNLR372N",
+            "is_moved": 0,
+            "is_ext_shared": false,
+            "is_org_shared": false,
+            "shared_team_ids": [
+                "TT622CF9Q"
+            ],
+            "internal_team_ids": [
+                "TT622CF9Q"
+            ],
+            "pending_shared": [],
+            "pending_connected_team_ids": [],
+            "is_pending_ext_shared": false,
+            "is_member": true,
+            "is_private": true,
+            "is_mpim": false,
+            "last_read": "1581536570.000300",
+            "is_open": true,
+            "topic": {
+                "value": "",
+                "creator": "",
+                "last_set": 0
+            },
+            "purpose": {
+                "value": "Channel for presidents\/co-presidents\/vice-presidents",
+                "creator": "WNNLR372N",
+                "last_set": 1581536570
+            },
+            "priority": 0
+        }
+    ],
+    "response_metadata": {
+        "next_cursor": ""
+    }
+}
