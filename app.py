@@ -6,8 +6,6 @@ from slackeventsapi import SlackEventAdapter
 import ssl as ssl_lib
 import certifi
 from onboarding_tutorial import OnboardingTutorial
-SLACK_BOT_TOKEN = 'xoxb-924070423330-947286498805-vsTfoUpF3SZxYh4KDEdXCRpH'
-SLACK_SIGNING_SECRET = '39fdb04aee51223f7c9ba4d884a871ce'
 
 app = Flask('OSE Bot')
 slack_events_adapter = SlackEventAdapter(SLACK_SIGNING_SECRET, "/slack/events", app)
