@@ -1,0 +1,1 @@
+{"source_id":"289732683989267999","version":"1","workflow":{"name":"New Member","blueprint":{"version":"1","trigger":{"type":"member_joined_channel","id":"b9716690-c6d6-4795-896c-7d1666d4751f","config":{"channel":{"value":"CTJR84HUY"}}},"steps":[]}}}
