@@ -52,7 +52,8 @@ def workflow(payload):
     webhook_dict = {
         "Event Planning": "https://hooks.slack.com/workflows/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",
         "Funding": "https://hooks.slack.com/workflows/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",
-        "Room Reservation": "https://hooks.slack.com/workflows/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"
+        "Room Reservation": "https://hooks.slack.com/workflows/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",
+        "General": "https://hooks.slack.com/workflows/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"
     }
 
     event = payload.get("event", {})
@@ -83,7 +84,7 @@ def workflow(payload):
                 channel=channel_dict[category],
                 users = user
             )
-    # Post the onboarding message.
+    # Help Desk
     if event["username"]=="Help Desk":
         user = text[1].replace('User: <@','')[0:9]
         category = text[2].replace('Category: ','').strip()
