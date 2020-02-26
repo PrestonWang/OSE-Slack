@@ -47,7 +47,8 @@ def workflow(payload):
         "Recreational":"CU7A1A05S", 
         "Religious": "CTUAMEZ0T",
         "Social": "CTVLNBBBK",
-        "Social Awareness":"CTV03STQA"
+        "Social Awareness":"CTV03STQA",
+        "New Org": "CUJJ18JL8"
     }
     webhook_dict = {
         "Event Planning": "https://hooks.slack.com/workflows/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",
@@ -65,7 +66,7 @@ def workflow(payload):
         role = text[2].replace('Role: ','').strip()
         assu = text[3].replace('ASSU: ','').strip()
         category = text[4].replace('Category: ','').strip()
-
+        neworg = text[5].replace('New Org: ','').strip()
         # TESTING: post selected userrole
         # response = client.chat_postMessage(
         #     channel=event["channel"],
@@ -82,6 +83,11 @@ def workflow(payload):
         if category in channel_dict.keys():
             response = client.conversations_invite(
                 channel=channel_dict[category],
+                users = user
+            )
+        if neworg == "Yes":
+            response = client.conversations_invite(
+                channel=channel_dict["New Org"],
                 users = user
             )
     # Help Desk
